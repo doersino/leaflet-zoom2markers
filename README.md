@@ -35,7 +35,7 @@ You can exclude markers from consideration by setting `zoom2MarkersExclude: true
 
 ## Notes
 
-Not tested for "interactions" (as in, drug interactions) with other extensions. (This one just scoops up all layers of type `L.Marker` into a `FeatureGroup`, then `fitBounds` the map to that group's `getBounds()`.)
+Not tested for "interactions" with other extensions. (This one just scoops up all layers of type `L.Marker` into a `FeatureGroup`, then `fitBounds` the map to that group's `getBounds()`.)
 
 
 ## Acknowledgements
