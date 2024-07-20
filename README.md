@@ -4,7 +4,7 @@ A basic [Leaflet](https://leafletjs.com) control that, when clicked, zooms the m
 
 In lieu of a demo (because this plugin is so dead simple), here's a screenshot – it's the bottom-most button.
 
-
+![](screenshot.jpg)
 
 ## Setup
 
