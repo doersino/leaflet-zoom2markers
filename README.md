@@ -24,6 +24,7 @@ After initializing your map:
 L.control.zoom2markers({
     position: 'topleft',
     title: 'Zoom to Markers',
+    maxZoom: null,  // maximum zoom level, set to 17 or 18 to avoid going in too close when there's only one marker
     forceSeparateButton: false,  // separate from +/- zoom controls?
 }).addTo(map);
 ```

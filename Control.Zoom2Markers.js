@@ -29,6 +29,7 @@
 		options: {
 			position: 'topleft',
 			title: 'Zoom to Markers',
+			maxZoom: null,  // maximum zoom level, set to 17 or 18 to avoid going in too close when there's only one marker
 			forceSeparateButton: false,  // separate from +/- zoom controls?
 		},
 
@@ -77,7 +78,7 @@
 
 				// ...get bounds and zoom to them
 				const bounds = markerFeatureGroup.getBounds();
-				this._map.fitBounds(bounds);
+				this._map.fitBounds(bounds, {maxZoom: this.options.maxZoom});
 			}
 		},
 
