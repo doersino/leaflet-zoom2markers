@@ -31,6 +31,8 @@ L.control.zoom2markers({
 
 (These are the default options, you can omit them unless you're going to assign different values.)
 
+You can additionally specify [any options accepted by Leaflet's `fitBounds` function](https://leafletjs.com/reference.html#fitbounds-options) which will be passed straight along when that function is called on interaction with the control (the `maxZoom` option is, in fact, one such option).
+
 You can exclude markers from consideration by setting `zoom2MarkersExclude: true` in *their* options; the zoom action will then ignore them.
 
 

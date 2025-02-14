@@ -76,9 +76,9 @@
 			// unless empty...
 			if (markerFeatureGroup.getLayers().length > 0) {
 
-				// ...get bounds and zoom to them
+				// ...get bounds and zoom to them, passing along any extra options specified
 				const bounds = markerFeatureGroup.getBounds();
-				this._map.fitBounds(bounds, {maxZoom: this.options.maxZoom});
+				this._map.fitBounds(bounds, this.options);
 			}
 		},
 
